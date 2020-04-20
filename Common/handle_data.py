@@ -42,7 +42,7 @@ def replace_data(data):
 
 
 def random_proname():
-    """生成一个数据库里面未注册的项目名"""
+    """生成一个数据库里面未注册的项目名称"""
     while True:
         name = "fls"
         for i in range(5):
