@@ -1,15 +1,13 @@
 import os
 import unittest
-import jsonpath
 from requests import request
-from random import randint as R
 from Common.handle_path import DATA_DIR
 from Library.myddt import ddt, data
 from Common.handle_excel import HandleExcel
 from Common.handle_config import conf
 from Common.handle_db import db
 from Common.handle_logging import log
-from Common.handle_data import EnvData, replace_data
+from Common.handle_data import EnvData, replace_data,login
 from Common.handle_assert import assert_dict
 
 filename = os.path.join(DATA_DIR, "apitest.xlsx")
@@ -20,23 +18,9 @@ class ProjectTestCase(unittest.TestCase):
     excel = HandleExcel(filename, "project")
     cases = excel.read_data()
 
-    @classmethod
-    def setUpClass(cls):
-        """用例的前置条件：登录"""
-        url = conf.get("env", "url") + "/user/login/"
-        data = {
-            "username": conf.get("test_data", "username"),
-            "password": conf.get("test_data", "password")
-        }
-        res = (request(method="post", url=url, json=data)).json()
-        print(res)
-        token = "JWT" + " " + jsonpath.jsonpath(res, "$..token")[0]
-        # 将提取出来的token作为EnvData的类属性（环境变量）
-        setattr(EnvData, "token", token)
-        EnvData.name = ProjectTestCase.random_username()
-
     @data(*cases)
     def test_project(self, case):
+        login()
         # 准备用例数据
         method = case["method"]
         url = conf.get("env", "url") + case["url"]
@@ -68,20 +52,3 @@ class ProjectTestCase(unittest.TestCase):
             # 结果回写excel中
             log.info("用例--{}--执行通过".format(case["title"]))
             self.excel.write_data(row=row, column=8, value="通过")
-
-    @staticmethod
-    def random_username():
-        """生成一个数据库里面未注册的项目名"""
-        while True:
-            name = "fls"
-            for i in range(5):
-                r = R(0, 9)
-                name += str(r)
-
-            # 数据库查询该用户名是否存在
-            # sql = "SELECT * From test.auth_user WHERE username ={}".format(name)
-            sql = 'SELECT * FROM test.tb_projects WHERE name="{}"'.format(name)
-            res = db.find_count(sql)
-            # 如果不存在,则返回该用户名
-            if res == 0:
-                return name

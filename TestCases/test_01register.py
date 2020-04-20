@@ -48,7 +48,6 @@ class RegisterTestCase(unittest.TestCase):
             log.debug("实际结果：{}".format(res))
             log.exception(e)
             self.excel.write_data(row=row, column=8, value="未通过")
-            print(e)
             raise e
         else:
             # 结果回写excel中

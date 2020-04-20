@@ -3573,3 +3573,96 @@ AssertionError: 断言不通过
 2020-04-20 17:38:40,967 -- [test_07testcase.py-->line:89] - INFO: 用例--author为空--执行通过
 2020-04-20 17:38:41,604 -- [test_07testcase.py-->line:89] - INFO: 用例--author超过50字符--执行通过
 2020-04-20 17:38:42,787 -- [Run_test.py-->line:22] - INFO: ---------------测试用例执行完毕,正在发送邮件-----------------------
+2020-04-20 22:12:43,408 -- [test_05projects.py-->line:45] - ERROR: 用例--创建已存在项目--执行未通过
+2020-04-20 22:12:43,408 -- [test_05projects.py-->line:46] - DEBUG: 预期结果：{'name': ['具有 项目名称 的 项目信息 已存在。']}
+2020-04-20 22:12:43,409 -- [test_05projects.py-->line:47] - DEBUG: 实际结果：{'id': 11075, 'create_time': '2020-04-20T22:12:43.180988+08:00', 'name': 'fls13107', 'leader': 'fls530', 'tester': 'fls530', 'programmer': 'fls530', 'publish_app': 'test', 'desc': 'test'}
+2020-04-20 22:12:43,409 -- [test_05projects.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\interfacetest\TestCases\test_05projects.py", line 39, in test_project
+    assert_dict(expected, res)
+  File "C:\Users\Administrator\Desktop\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-20 22:12:43,896 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-20 22:12:44,422 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-20 22:12:44,889 -- [test_05projects.py-->line:45] - ERROR: 用例--leader为空--执行未通过
+2020-04-20 22:12:44,889 -- [test_05projects.py-->line:46] - DEBUG: 预期结果：{'leader': ['该字段不能为空。']}
+2020-04-20 22:12:44,889 -- [test_05projects.py-->line:47] - DEBUG: 实际结果：{'id': 11076, 'create_time': '2020-04-20T22:12:44.660258+08:00', 'name': 'fls19716', 'leader': 'fls530', 'tester': 'fls530', 'programmer': 'fls530', 'publish_app': 'test', 'desc': 'test'}
+2020-04-20 22:12:44,890 -- [test_05projects.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\interfacetest\TestCases\test_05projects.py", line 39, in test_project
+    assert_dict(expected, res)
+  File "C:\Users\Administrator\Desktop\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-20 22:12:45,406 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-20 22:12:45,886 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-20 22:12:46,349 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-20 22:12:46,820 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-20 22:12:47,315 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-20 22:12:47,778 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-20 22:12:48,246 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-20 22:12:48,708 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-20 22:12:49,181 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-20 22:15:51,881 -- [test_05projects.py-->line:45] - ERROR: 用例--创建已存在项目--执行未通过
+2020-04-20 22:15:51,882 -- [test_05projects.py-->line:46] - DEBUG: 预期结果：{'name': ['具有 项目名称 的 项目信息 已存在。']}
+2020-04-20 22:15:51,882 -- [test_05projects.py-->line:47] - DEBUG: 实际结果：{'id': 11083, 'create_time': '2020-04-20T22:15:51.653744+08:00', 'name': 'fls09545', 'leader': 'fls530', 'tester': 'fls530', 'programmer': 'fls530', 'publish_app': 'test', 'desc': 'test'}
+2020-04-20 22:15:51,882 -- [test_05projects.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\interfacetest\TestCases\test_05projects.py", line 39, in test_project
+    assert_dict(expected, res)
+  File "C:\Users\Administrator\Desktop\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-20 22:15:52,374 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-20 22:15:52,889 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-20 22:15:53,344 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-20 22:15:53,825 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-20 22:15:54,279 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-20 22:15:54,745 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-20 22:15:55,207 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-20 22:15:55,673 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-20 22:15:56,132 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-20 22:15:56,609 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-20 22:15:57,073 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-20 22:15:57,545 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-20 22:16:35,466 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-20 22:16:35,936 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-20 22:16:36,451 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-20 22:16:37,331 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-20 22:16:37,793 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-20 22:16:38,258 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-20 22:16:38,753 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-20 22:16:39,215 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-20 22:16:39,670 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-20 22:16:40,591 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-20 22:16:41,047 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-20 22:16:41,526 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-20 22:16:41,990 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-20 22:19:03,224 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-20 22:19:03,680 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-20 22:19:04,165 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-20 22:19:04,669 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-20 22:19:05,137 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-20 22:19:05,610 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-20 22:19:06,072 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-20 22:19:06,596 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-20 22:19:07,050 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-20 22:19:07,509 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-20 22:19:07,958 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-20 22:19:08,432 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-20 22:19:08,904 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-20 22:23:48,334 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目成功--执行通过
+2020-04-20 22:23:48,803 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-20 22:23:49,269 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-20 22:23:49,730 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-20 22:23:50,211 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-20 22:23:50,680 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-20 22:23:51,152 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-20 22:23:51,609 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-20 22:23:52,086 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-20 22:23:52,558 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-20 22:23:53,025 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-20 22:23:53,476 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-20 22:23:53,942 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-20 22:23:54,416 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
