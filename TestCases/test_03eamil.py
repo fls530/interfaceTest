@@ -22,7 +22,7 @@ class EmailTestCase(unittest.TestCase):
         method = case["method"]
         url = conf.get("env", "url") + case["url"]
         expected = eval(case["expected"])
-        row = case["case_id"]+1
+        row = case["case_id"] + 1
         res = (request(method, url)).json()
         try:
             assert_dict(expected, res)
@@ -34,7 +34,6 @@ class EmailTestCase(unittest.TestCase):
             log.exception(e)
             self.excel.write_data(row=row, column=8, value="未通过")
             raise e
-
         else:
             # 结果回写excel中
             log.info("用例--{}--执行通过".format(case["title"]))

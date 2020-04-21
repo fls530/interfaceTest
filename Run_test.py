@@ -19,4 +19,4 @@ bf = BeautifulReport(suite)
 bf.report("注册接口", filename="report.html", report_dir=REPORT_DIR)
 
 send_smg()
-log.info("---------------测试用例执行完毕,正在发送邮件-----------------------")
+log.info("---------------测试用例执行完毕,正在发送邮件,请注意查收-----------------------")

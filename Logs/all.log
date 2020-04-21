@@ -3666,3 +3666,577 @@ AssertionError: 断言不通过
 2020-04-20 22:23:53,476 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
 2020-04-20 22:23:53,942 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
 2020-04-20 22:23:54,416 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:04:16,443 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:04:17,179 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:04:17,891 -- [test_06interface.py-->line:45] - ERROR: 用例--接口名称已存在--执行未通过
+2020-04-21 10:04:17,891 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'name': ['具有 接口名称 的 接口信息 已存在。']}
+2020-04-21 10:04:17,891 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'id': 6510, 'name': 'inter08573', 'tester': 'fls530', 'project': 'fls66008', 'project_id': 11209, 'desc': 'test', 'create_time': '2020-04-21T10:04:09.440322+08:00'}
+2020-04-21 10:04:17,891 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:04:18,605 -- [test_06interface.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:04:19,313 -- [test_06interface.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:04:20,036 -- [test_06interface.py-->line:53] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:04:20,756 -- [test_06interface.py-->line:45] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:04:20,756 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:04:20,800 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:04:20,800 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:04:21,533 -- [test_06interface.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 10:04:22,256 -- [test_06interface.py-->line:45] - ERROR: 用例--不传desc--执行未通过
+2020-04-21 10:04:22,257 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'desc': ''}
+2020-04-21 10:04:22,257 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'id': 6512, 'name': 'inter23571', 'tester': 'fls530', 'project': 'fls34303', 'project_id': 11215, 'desc': None, 'create_time': '2020-04-21T10:04:13.805073+08:00'}
+2020-04-21 10:04:22,257 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:06:25,544 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:06:26,248 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:06:26,967 -- [test_06interface.py-->line:45] - ERROR: 用例--接口名称已存在--执行未通过
+2020-04-21 10:06:26,967 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'name': ['具有 接口名称 的 接口信息 已存在。']}
+2020-04-21 10:06:26,967 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'id': 6514, 'name': 'fls530', 'tester': 'fls530', 'project': 'fls24369', 'project_id': 11218, 'desc': 'test', 'create_time': '2020-04-21T10:06:18.510877+08:00'}
+2020-04-21 10:06:26,967 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:06:27,684 -- [test_06interface.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:06:28,378 -- [test_06interface.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:06:29,092 -- [test_06interface.py-->line:53] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:06:29,833 -- [test_06interface.py-->line:45] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:06:29,834 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:06:29,834 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:06:29,834 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:06:30,551 -- [test_06interface.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 10:06:31,285 -- [test_06interface.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:06:41,281 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:06:42,031 -- [test_06interface.py-->line:53] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:06:42,796 -- [test_06interface.py-->line:53] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:06:43,541 -- [test_06interface.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:06:44,290 -- [test_06interface.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:06:45,049 -- [test_06interface.py-->line:53] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:06:45,819 -- [test_06interface.py-->line:45] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:06:45,819 -- [test_06interface.py-->line:46] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:06:45,819 -- [test_06interface.py-->line:47] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:06:45,820 -- [test_06interface.py-->line:48] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:06:46,577 -- [test_06interface.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 10:06:47,372 -- [test_06interface.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:10:07,800 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:10:08,971 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:10:09,725 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:10:10,481 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:10:11,213 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:10:11,929 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:10:12,670 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:10:12,670 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:10:12,671 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:10:12,671 -- [test_06interface.py-->line:50] - ERROR: 断言不通过
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过")
+AssertionError: 断言不通过
+2020-04-21 10:10:13,448 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 10:10:14,180 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:12:36,955 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:12:37,701 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:12:38,411 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:12:39,158 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:12:40,911 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:12:41,671 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:12:43,108 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 10:12:43,834 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:15:17,293 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:15:18,050 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:15:19,042 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:15:19,776 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:15:20,482 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:15:21,192 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:15:22,683 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 10:15:23,405 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:16:03,220 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:16:03,949 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:16:04,672 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:16:05,372 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:16:06,052 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:16:06,745 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:16:07,444 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:16:07,444 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:16:07,444 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:16:07,444 -- [test_06interface.py-->line:50] - ERROR: 断言不通过实践结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过" + "实践结果" + str(res))
+AssertionError: 断言不通过实践结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:16:08,120 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 10:16:08,803 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:37:24,165 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 10:37:24,857 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 10:37:25,559 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 10:37:26,242 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 10:37:26,923 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 10:37:27,585 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 10:37:28,268 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 10:37:28,268 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 10:37:28,268 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:37:28,269 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 10:37:28,965 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 10:37:29,674 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 10:44:43,056 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 10:44:43,965 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 10:44:44,880 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 10:44:45,848 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 10:44:46,740 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 10:44:48,438 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 10:44:49,363 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 10:44:50,247 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 11:03:11,121 -- [test_07testcase.py-->line:52] - INFO: 用例--创建用例成功--执行通过
+2020-04-21 11:03:12,119 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 11:03:13,088 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 11:03:14,024 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 11:03:15,004 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 11:03:16,233 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 11:03:17,201 -- [test_07testcase.py-->line:44] - ERROR: 用例--pid和iid为字符串--执行未通过
+2020-04-21 11:03:17,201 -- [test_07testcase.py-->line:45] - DEBUG: 预期结果：{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}}
+2020-04-21 11:03:17,201 -- [test_07testcase.py-->line:46] - DEBUG: 实际结果：{'id': 2168, 'name': 'case43896', 'interface': {'name': 'inter29950', 'project': 'fls83881'}, 'author': 'fls530'}
+2020-04-21 11:03:17,202 -- [test_07testcase.py-->line:47] - ERROR: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2168, 'name': 'case43896', 'interface': {'name': 'inter29950', 'project': 'fls83881'}, 'author': 'fls530'}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_07testcase.py", line 38, in test_testcase
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2168, 'name': 'case43896', 'interface': {'name': 'inter29950', 'project': 'fls83881'}, 'author': 'fls530'}
+2020-04-21 11:03:18,190 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 11:03:19,167 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 11:03:21,203 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 11:03:22,246 -- [test_07testcase.py-->line:52] - INFO: 用例--author为空--执行通过
+2020-04-21 11:03:23,269 -- [test_07testcase.py-->line:52] - INFO: 用例--author超过50字符--执行通过
+2020-04-21 11:03:49,148 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 11:03:49,959 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 11:03:50,763 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 11:03:51,540 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:03:52,973 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 11:03:53,722 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 11:03:53,722 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 11:03:53,722 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:03:53,722 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:03:54,513 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 11:03:55,295 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:05:25,581 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 11:05:26,366 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 11:05:27,106 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 11:05:27,837 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:05:28,556 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:05:29,305 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 11:05:30,052 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 11:05:30,052 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 11:05:30,053 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:05:30,053 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:05:30,805 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 11:05:31,561 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:06:28,804 -- [Run_test.py-->line:7] - INFO: ---------------开始执行测试用例-----------------------
+2020-04-21 11:06:29,741 -- [test_01register.py-->line:46] - ERROR: 用例--注册成功-用户名包含英文和数字--执行未通过
+2020-04-21 11:06:29,741 -- [test_01register.py-->line:47] - DEBUG: 预期结果：{'username': 'fls530'}
+2020-04-21 11:06:29,741 -- [test_01register.py-->line:48] - DEBUG: 实际结果：{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:29,741 -- [test_01register.py-->line:49] - ERROR: 断言不通过!预期结果:{'username': 'fls530'},实际结果{'username': ['已存在一位使用该名字的用户。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_01register.py", line 38, in test_register
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'username': 'fls530'},实际结果{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:30,071 -- [test_01register.py-->line:46] - ERROR: 用例--注册成功-用户名包含中文--执行未通过
+2020-04-21 11:06:30,071 -- [test_01register.py-->line:47] - DEBUG: 预期结果：{'username': 'fls530哈哈哈'}
+2020-04-21 11:06:30,071 -- [test_01register.py-->line:48] - DEBUG: 实际结果：{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:30,071 -- [test_01register.py-->line:49] - ERROR: 断言不通过!预期结果:{'username': 'fls530哈哈哈'},实际结果{'username': ['已存在一位使用该名字的用户。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_01register.py", line 38, in test_register
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'username': 'fls530哈哈哈'},实际结果{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:30,408 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名为纯英文--执行通过
+2020-04-21 11:06:30,745 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:06:31,051 -- [test_01register.py-->line:54] - INFO: 用例--已注册的用户名--执行通过
+2020-04-21 11:06:31,352 -- [test_01register.py-->line:54] - INFO: 用例--已注册的邮箱--执行通过
+2020-04-21 11:06:31,653 -- [test_01register.py-->line:54] - INFO: 用例--用户名小于6位--执行通过
+2020-04-21 11:06:31,963 -- [test_01register.py-->line:54] - INFO: 用例--邮箱格式错误--执行通过
+2020-04-21 11:06:32,275 -- [test_01register.py-->line:54] - INFO: 用例--用户名大于20位--执行通过
+2020-04-21 11:06:32,598 -- [test_01register.py-->line:54] - INFO: 用例--密码小于6位--执行通过
+2020-04-21 11:06:32,912 -- [test_01register.py-->line:54] - INFO: 用例--密码大于20位--执行通过
+2020-04-21 11:06:33,251 -- [test_01register.py-->line:54] - INFO: 用例--两遍密码不一致--执行通过
+2020-04-21 11:06:33,578 -- [test_01register.py-->line:46] - ERROR: 用例--密码为中文--执行未通过
+2020-04-21 11:06:33,578 -- [test_01register.py-->line:47] - DEBUG: 预期结果：{'non_field_errors': ['两次输入密码不正确']}
+2020-04-21 11:06:33,578 -- [test_01register.py-->line:48] - DEBUG: 实际结果：{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:33,578 -- [test_01register.py-->line:49] - ERROR: 断言不通过!预期结果:{'non_field_errors': ['两次输入密码不正确']},实际结果{'username': ['已存在一位使用该名字的用户。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_01register.py", line 38, in test_register
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'non_field_errors': ['两次输入密码不正确']},实际结果{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:33,899 -- [test_01register.py-->line:46] - ERROR: 用例--确认密码为中文--执行未通过
+2020-04-21 11:06:33,899 -- [test_01register.py-->line:47] - DEBUG: 预期结果：{'non_field_errors': ['两次输入密码不正确']}
+2020-04-21 11:06:33,899 -- [test_01register.py-->line:48] - DEBUG: 实际结果：{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:33,899 -- [test_01register.py-->line:49] - ERROR: 断言不通过!预期结果:{'non_field_errors': ['两次输入密码不正确']},实际结果{'username': ['已存在一位使用该名字的用户。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_01register.py", line 38, in test_register
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'non_field_errors': ['两次输入密码不正确']},实际结果{'username': ['已存在一位使用该名字的用户。']}
+2020-04-21 11:06:34,027 -- [test_03eamil.py-->line:40] - INFO: 用例--已注册用户名--执行通过
+2020-04-21 11:06:34,156 -- [test_03eamil.py-->line:40] - INFO: 用例--未注册用户名--执行通过
+2020-04-21 11:06:34,641 -- [test_04login.py-->line:39] - INFO: 用例--登录成功--执行通过
+2020-04-21 11:06:34,763 -- [test_04login.py-->line:39] - INFO: 用例--用户名为空--执行通过
+2020-04-21 11:06:34,874 -- [test_04login.py-->line:39] - INFO: 用例--密码为空--执行通过
+2020-04-21 11:06:35,119 -- [test_04login.py-->line:39] - INFO: 用例--用户名未注册--执行通过
+2020-04-21 11:06:35,342 -- [test_04login.py-->line:39] - INFO: 用例--密码错误--执行通过
+2020-04-21 11:06:35,567 -- [test_04login.py-->line:39] - INFO: 用例--用户名格式错误--执行通过
+2020-04-21 11:06:36,184 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目成功--执行通过
+2020-04-21 11:06:36,601 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-21 11:06:37,028 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-21 11:06:37,460 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-21 11:06:37,891 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-21 11:06:38,341 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-21 11:06:38,787 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:06:39,226 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:06:39,669 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-21 11:06:40,125 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-21 11:06:40,576 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-21 11:06:41,043 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-21 11:06:41,511 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 11:06:41,974 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:06:42,961 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 11:06:43,699 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 11:06:44,447 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 11:06:45,212 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:06:45,965 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:06:46,709 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 11:06:47,424 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 11:06:47,425 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 11:06:47,425 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:06:47,425 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:06:48,158 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 11:06:48,902 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:06:50,021 -- [test_07testcase.py-->line:52] - INFO: 用例--创建用例成功--执行通过
+2020-04-21 11:06:50,970 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 11:06:51,931 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 11:06:53,135 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 11:06:54,084 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 11:06:55,031 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 11:06:55,947 -- [test_07testcase.py-->line:44] - ERROR: 用例--pid和iid为字符串--执行未通过
+2020-04-21 11:06:55,947 -- [test_07testcase.py-->line:45] - DEBUG: 预期结果：{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}}
+2020-04-21 11:06:55,947 -- [test_07testcase.py-->line:46] - DEBUG: 实际结果：{'id': 2170, 'name': 'case30538', 'interface': {'name': 'inter59942', 'project': 'fls51576'}, 'author': 'fls530'}
+2020-04-21 11:06:55,948 -- [test_07testcase.py-->line:47] - ERROR: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2170, 'name': 'case30538', 'interface': {'name': 'inter59942', 'project': 'fls51576'}, 'author': 'fls530'}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_07testcase.py", line 38, in test_testcase
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2170, 'name': 'case30538', 'interface': {'name': 'inter59942', 'project': 'fls51576'}, 'author': 'fls530'}
+2020-04-21 11:06:56,878 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 11:06:57,874 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 11:06:59,094 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 11:07:00,016 -- [test_07testcase.py-->line:52] - INFO: 用例--author为空--执行通过
+2020-04-21 11:07:00,983 -- [test_07testcase.py-->line:52] - INFO: 用例--author超过50字符--执行通过
+2020-04-21 11:07:02,583 -- [Run_test.py-->line:22] - INFO: ---------------测试用例执行完毕,正在发送邮件-----------------------
+2020-04-21 11:29:53,528 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含英文和数字--执行通过
+2020-04-21 11:29:53,942 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:29:54,231 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名为纯英文--执行通过
+2020-04-21 11:29:54,519 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:29:54,808 -- [test_01register.py-->line:54] - INFO: 用例--已注册的用户名--执行通过
+2020-04-21 11:29:55,089 -- [test_01register.py-->line:54] - INFO: 用例--已注册的邮箱--执行通过
+2020-04-21 11:29:55,380 -- [test_01register.py-->line:54] - INFO: 用例--用户名小于6位--执行通过
+2020-04-21 11:29:55,667 -- [test_01register.py-->line:54] - INFO: 用例--邮箱格式错误--执行通过
+2020-04-21 11:29:55,956 -- [test_01register.py-->line:54] - INFO: 用例--用户名大于20位--执行通过
+2020-04-21 11:29:56,252 -- [test_01register.py-->line:54] - INFO: 用例--密码小于6位--执行通过
+2020-04-21 11:29:56,545 -- [test_01register.py-->line:54] - INFO: 用例--密码大于20位--执行通过
+2020-04-21 11:29:56,841 -- [test_01register.py-->line:54] - INFO: 用例--两遍密码不一致--执行通过
+2020-04-21 11:29:57,130 -- [test_01register.py-->line:54] - INFO: 用例--密码为中文--执行通过
+2020-04-21 11:29:57,428 -- [test_01register.py-->line:54] - INFO: 用例--确认密码为中文--执行通过
+2020-04-21 11:34:46,127 -- [Run_test.py-->line:7] - INFO: ---------------开始执行测试用例-----------------------
+2020-04-21 11:34:47,262 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含英文和数字--执行通过
+2020-04-21 11:34:47,671 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:34:47,959 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名为纯英文--执行通过
+2020-04-21 11:34:48,250 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:34:48,546 -- [test_01register.py-->line:54] - INFO: 用例--已注册的用户名--执行通过
+2020-04-21 11:34:48,840 -- [test_01register.py-->line:54] - INFO: 用例--已注册的邮箱--执行通过
+2020-04-21 11:34:49,140 -- [test_01register.py-->line:54] - INFO: 用例--用户名小于6位--执行通过
+2020-04-21 11:34:49,430 -- [test_01register.py-->line:54] - INFO: 用例--邮箱格式错误--执行通过
+2020-04-21 11:34:49,728 -- [test_01register.py-->line:54] - INFO: 用例--用户名大于20位--执行通过
+2020-04-21 11:34:50,024 -- [test_01register.py-->line:54] - INFO: 用例--密码小于6位--执行通过
+2020-04-21 11:34:50,318 -- [test_01register.py-->line:54] - INFO: 用例--密码大于20位--执行通过
+2020-04-21 11:34:50,618 -- [test_01register.py-->line:54] - INFO: 用例--两遍密码不一致--执行通过
+2020-04-21 11:34:50,912 -- [test_01register.py-->line:54] - INFO: 用例--密码为中文--执行通过
+2020-04-21 11:34:51,213 -- [test_01register.py-->line:54] - INFO: 用例--确认密码为中文--执行通过
+2020-04-21 11:34:51,317 -- [test_03eamil.py-->line:40] - INFO: 用例--已注册用户名--执行通过
+2020-04-21 11:34:51,429 -- [test_03eamil.py-->line:40] - INFO: 用例--未注册用户名--执行通过
+2020-04-21 11:34:51,843 -- [test_04login.py-->line:39] - INFO: 用例--登录成功--执行通过
+2020-04-21 11:34:51,957 -- [test_04login.py-->line:39] - INFO: 用例--用户名为空--执行通过
+2020-04-21 11:34:52,065 -- [test_04login.py-->line:39] - INFO: 用例--密码为空--执行通过
+2020-04-21 11:34:52,312 -- [test_04login.py-->line:39] - INFO: 用例--用户名未注册--执行通过
+2020-04-21 11:34:52,538 -- [test_04login.py-->line:39] - INFO: 用例--密码错误--执行通过
+2020-04-21 11:34:52,766 -- [test_04login.py-->line:39] - INFO: 用例--用户名格式错误--执行通过
+2020-04-21 11:34:53,420 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目成功--执行通过
+2020-04-21 11:34:53,870 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-21 11:34:54,283 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-21 11:34:54,713 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-21 11:34:55,125 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-21 11:34:55,546 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-21 11:34:55,973 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:34:56,380 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:34:56,800 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-21 11:34:57,227 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-21 11:34:57,652 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-21 11:34:58,087 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-21 11:34:58,507 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 11:34:58,932 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:34:59,812 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 11:35:00,514 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 11:35:01,208 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 11:35:01,927 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:35:02,640 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:35:03,350 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 11:35:04,043 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 11:35:04,043 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 11:35:04,044 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:35:04,044 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:35:04,752 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 11:35:05,485 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:35:06,605 -- [test_07testcase.py-->line:52] - INFO: 用例--创建用例成功--执行通过
+2020-04-21 11:35:07,507 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 11:35:08,397 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 11:35:09,280 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 11:35:10,178 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 11:35:11,089 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 11:35:11,989 -- [test_07testcase.py-->line:44] - ERROR: 用例--pid和iid为字符串--执行未通过
+2020-04-21 11:35:11,989 -- [test_07testcase.py-->line:45] - DEBUG: 预期结果：{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}}
+2020-04-21 11:35:11,989 -- [test_07testcase.py-->line:46] - DEBUG: 实际结果：{'id': 2178, 'name': 'case34062', 'interface': {'name': 'inter02912', 'project': 'fls07409'}, 'author': 'fls530'}
+2020-04-21 11:35:11,989 -- [test_07testcase.py-->line:47] - ERROR: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2178, 'name': 'case34062', 'interface': {'name': 'inter02912', 'project': 'fls07409'}, 'author': 'fls530'}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_07testcase.py", line 38, in test_testcase
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2178, 'name': 'case34062', 'interface': {'name': 'inter02912', 'project': 'fls07409'}, 'author': 'fls530'}
+2020-04-21 11:35:12,900 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 11:35:13,791 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 11:35:14,703 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 11:35:15,626 -- [test_07testcase.py-->line:52] - INFO: 用例--author为空--执行通过
+2020-04-21 11:35:16,540 -- [test_07testcase.py-->line:52] - INFO: 用例--author超过50字符--执行通过
+2020-04-21 11:35:17,911 -- [Run_test.py-->line:22] - INFO: ---------------测试用例执行完毕,正在发送邮件-----------------------
+2020-04-21 11:38:31,164 -- [test_03eamil.py-->line:39] - INFO: 用例--已注册用户名--执行通过
+2020-04-21 11:41:24,312 -- [Run_test.py-->line:7] - INFO: ---------------开始执行测试用例-----------------------
+2020-04-21 11:41:25,526 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含英文和数字--执行通过
+2020-04-21 11:41:25,956 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:41:26,277 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名为纯英文--执行通过
+2020-04-21 11:41:26,582 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 11:41:26,887 -- [test_01register.py-->line:54] - INFO: 用例--已注册的用户名--执行通过
+2020-04-21 11:41:27,189 -- [test_01register.py-->line:54] - INFO: 用例--已注册的邮箱--执行通过
+2020-04-21 11:41:27,497 -- [test_01register.py-->line:54] - INFO: 用例--用户名小于6位--执行通过
+2020-04-21 11:41:27,807 -- [test_01register.py-->line:54] - INFO: 用例--邮箱格式错误--执行通过
+2020-04-21 11:41:28,111 -- [test_01register.py-->line:54] - INFO: 用例--用户名大于20位--执行通过
+2020-04-21 11:41:28,425 -- [test_01register.py-->line:54] - INFO: 用例--密码小于6位--执行通过
+2020-04-21 11:41:28,746 -- [test_01register.py-->line:54] - INFO: 用例--密码大于20位--执行通过
+2020-04-21 11:41:29,086 -- [test_01register.py-->line:54] - INFO: 用例--两遍密码不一致--执行通过
+2020-04-21 11:41:29,396 -- [test_01register.py-->line:54] - INFO: 用例--密码为中文--执行通过
+2020-04-21 11:41:29,707 -- [test_01register.py-->line:54] - INFO: 用例--确认密码为中文--执行通过
+2020-04-21 11:41:29,817 -- [test_03eamil.py-->line:39] - INFO: 用例--已注册用户名--执行通过
+2020-04-21 11:41:29,919 -- [test_03eamil.py-->line:39] - INFO: 用例--未注册用户名--执行通过
+2020-04-21 11:41:30,335 -- [test_04login.py-->line:39] - INFO: 用例--登录成功--执行通过
+2020-04-21 11:41:30,442 -- [test_04login.py-->line:39] - INFO: 用例--用户名为空--执行通过
+2020-04-21 11:41:30,548 -- [test_04login.py-->line:39] - INFO: 用例--密码为空--执行通过
+2020-04-21 11:41:30,773 -- [test_04login.py-->line:39] - INFO: 用例--用户名未注册--执行通过
+2020-04-21 11:41:30,994 -- [test_04login.py-->line:39] - INFO: 用例--密码错误--执行通过
+2020-04-21 11:41:31,217 -- [test_04login.py-->line:39] - INFO: 用例--用户名格式错误--执行通过
+2020-04-21 11:41:31,824 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目成功--执行通过
+2020-04-21 11:41:32,283 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-21 11:41:32,990 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-21 11:41:33,494 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-21 11:41:33,926 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-21 11:41:34,361 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-21 11:41:34,784 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:41:35,202 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:41:35,625 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-21 11:41:36,050 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-21 11:41:36,494 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-21 11:41:36,933 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-21 11:41:37,363 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 11:41:37,792 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:41:38,722 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 11:41:39,518 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 11:41:40,253 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 11:41:41,036 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 11:41:41,772 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 11:41:42,538 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 11:41:43,258 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 11:41:43,258 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 11:41:43,258 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:41:43,258 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 11:41:44,088 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 11:41:44,807 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 11:41:45,920 -- [test_07testcase.py-->line:52] - INFO: 用例--创建用例成功--执行通过
+2020-04-21 11:41:47,143 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 11:41:48,089 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 11:41:49,006 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 11:41:49,957 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 11:41:50,927 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 11:41:51,874 -- [test_07testcase.py-->line:44] - ERROR: 用例--pid和iid为字符串--执行未通过
+2020-04-21 11:41:51,875 -- [test_07testcase.py-->line:45] - DEBUG: 预期结果：{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}}
+2020-04-21 11:41:51,875 -- [test_07testcase.py-->line:46] - DEBUG: 实际结果：{'id': 2180, 'name': 'case30178', 'interface': {'name': 'inter53231', 'project': 'fls05386'}, 'author': 'fls530'}
+2020-04-21 11:41:51,879 -- [test_07testcase.py-->line:47] - ERROR: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2180, 'name': 'case30178', 'interface': {'name': 'inter53231', 'project': 'fls05386'}, 'author': 'fls530'}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_07testcase.py", line 38, in test_testcase
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2180, 'name': 'case30178', 'interface': {'name': 'inter53231', 'project': 'fls05386'}, 'author': 'fls530'}
+2020-04-21 11:41:52,869 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 11:41:53,835 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 11:41:54,795 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 11:41:55,760 -- [test_07testcase.py-->line:52] - INFO: 用例--author为空--执行通过
+2020-04-21 11:41:56,734 -- [test_07testcase.py-->line:52] - INFO: 用例--author超过50字符--执行通过
+2020-04-21 11:41:58,364 -- [Run_test.py-->line:22] - INFO: ---------------测试用例执行完毕,正在发送邮件-----------------------
+2020-04-21 12:20:59,380 -- [Run_test.py-->line:7] - INFO: ---------------开始执行测试用例-----------------------
+2020-04-21 12:21:00,721 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含英文和数字--执行通过
+2020-04-21 12:21:01,161 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 12:21:01,465 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名为纯英文--执行通过
+2020-04-21 12:21:01,775 -- [test_01register.py-->line:54] - INFO: 用例--注册成功-用户名包含中文--执行通过
+2020-04-21 12:21:02,105 -- [test_01register.py-->line:54] - INFO: 用例--已注册的用户名--执行通过
+2020-04-21 12:21:02,412 -- [test_01register.py-->line:54] - INFO: 用例--已注册的邮箱--执行通过
+2020-04-21 12:21:02,721 -- [test_01register.py-->line:54] - INFO: 用例--用户名小于6位--执行通过
+2020-04-21 12:21:03,032 -- [test_01register.py-->line:54] - INFO: 用例--邮箱格式错误--执行通过
+2020-04-21 12:21:03,340 -- [test_01register.py-->line:54] - INFO: 用例--用户名大于20位--执行通过
+2020-04-21 12:21:03,659 -- [test_01register.py-->line:54] - INFO: 用例--密码小于6位--执行通过
+2020-04-21 12:21:04,006 -- [test_01register.py-->line:54] - INFO: 用例--密码大于20位--执行通过
+2020-04-21 12:21:04,354 -- [test_01register.py-->line:54] - INFO: 用例--两遍密码不一致--执行通过
+2020-04-21 12:21:04,700 -- [test_01register.py-->line:54] - INFO: 用例--密码为中文--执行通过
+2020-04-21 12:21:05,030 -- [test_01register.py-->line:54] - INFO: 用例--确认密码为中文--执行通过
+2020-04-21 12:21:05,138 -- [test_03eamil.py-->line:39] - INFO: 用例--已注册用户名--执行通过
+2020-04-21 12:21:05,266 -- [test_03eamil.py-->line:39] - INFO: 用例--未注册用户名--执行通过
+2020-04-21 12:21:05,683 -- [test_04login.py-->line:39] - INFO: 用例--登录成功--执行通过
+2020-04-21 12:21:05,790 -- [test_04login.py-->line:39] - INFO: 用例--用户名为空--执行通过
+2020-04-21 12:21:05,899 -- [test_04login.py-->line:39] - INFO: 用例--密码为空--执行通过
+2020-04-21 12:21:06,122 -- [test_04login.py-->line:39] - INFO: 用例--用户名未注册--执行通过
+2020-04-21 12:21:06,344 -- [test_04login.py-->line:39] - INFO: 用例--密码错误--执行通过
+2020-04-21 12:21:06,581 -- [test_04login.py-->line:39] - INFO: 用例--用户名格式错误--执行通过
+2020-04-21 12:21:07,224 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目成功--执行通过
+2020-04-21 12:21:07,665 -- [test_05projects.py-->line:53] - INFO: 用例--创建已存在项目--执行通过
+2020-04-21 12:21:08,082 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称为空--执行通过
+2020-04-21 12:21:08,776 -- [test_05projects.py-->line:53] - INFO: 用例--创建项目名称超过200字符--执行通过
+2020-04-21 12:21:09,216 -- [test_05projects.py-->line:53] - INFO: 用例--leader为空--执行通过
+2020-04-21 12:21:09,640 -- [test_05projects.py-->line:53] - INFO: 用例--leader超过50字符--执行通过
+2020-04-21 12:21:10,071 -- [test_05projects.py-->line:53] - INFO: 用例--tester为空--执行通过
+2020-04-21 12:21:10,485 -- [test_05projects.py-->line:53] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 12:21:10,925 -- [test_05projects.py-->line:53] - INFO: 用例--programmer为空--执行通过
+2020-04-21 12:21:11,421 -- [test_05projects.py-->line:53] - INFO: 用例--programmer超过50字符--执行通过
+2020-04-21 12:21:11,852 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app为空--执行通过
+2020-04-21 12:21:12,272 -- [test_05projects.py-->line:53] - INFO: 用例--publish_app超过100字符--执行通过
+2020-04-21 12:21:12,711 -- [test_05projects.py-->line:53] - INFO: 用例--传desc--执行通过
+2020-04-21 12:21:13,159 -- [test_05projects.py-->line:53] - INFO: 用例--不传desc--执行通过
+2020-04-21 12:21:14,111 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口成功--执行通过
+2020-04-21 12:21:14,878 -- [test_06interface.py-->line:55] - INFO: 用例--创建接口名称为空--执行通过
+2020-04-21 12:21:15,644 -- [test_06interface.py-->line:55] - INFO: 用例--接口名称已存在--执行通过
+2020-04-21 12:21:16,388 -- [test_06interface.py-->line:55] - INFO: 用例--tester为空--执行通过
+2020-04-21 12:21:17,134 -- [test_06interface.py-->line:55] - INFO: 用例--tester超过50字符--执行通过
+2020-04-21 12:21:17,872 -- [test_06interface.py-->line:55] - INFO: 用例--project_id为空--执行通过
+2020-04-21 12:21:18,609 -- [test_06interface.py-->line:47] - ERROR: 用例--project_id不存在--执行未通过
+2020-04-21 12:21:18,609 -- [test_06interface.py-->line:48] - DEBUG: 预期结果：{'project_id': ['项目id不存在。']}
+2020-04-21 12:21:18,609 -- [test_06interface.py-->line:49] - DEBUG: 实际结果：{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 12:21:18,609 -- [test_06interface.py-->line:50] - ERROR: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_06interface.py", line 39, in test_interface
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'project_id': ['项目id不存在。']},实际结果{'project_id': ['无效主键 “111111” － 对象不存在。']}
+2020-04-21 12:21:19,334 -- [test_06interface.py-->line:55] - INFO: 用例--传desc--执行通过
+2020-04-21 12:21:20,343 -- [test_06interface.py-->line:55] - INFO: 用例--不传desc--执行通过
+2020-04-21 12:21:21,491 -- [test_07testcase.py-->line:52] - INFO: 用例--创建用例成功--执行通过
+2020-04-21 12:21:22,708 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称已存在--执行通过
+2020-04-21 12:21:23,741 -- [test_07testcase.py-->line:52] - INFO: 用例--用例名称为空--执行通过
+2020-04-21 12:21:25,221 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为字符串类型--执行通过
+2020-04-21 12:21:26,162 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为整形--执行通过
+2020-04-21 12:21:27,077 -- [test_07testcase.py-->line:52] - INFO: 用例--interface为空字典--执行通过
+2020-04-21 12:21:28,061 -- [test_07testcase.py-->line:44] - ERROR: 用例--pid和iid为字符串--执行未通过
+2020-04-21 12:21:28,061 -- [test_07testcase.py-->line:45] - DEBUG: 预期结果：{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}}
+2020-04-21 12:21:28,061 -- [test_07testcase.py-->line:46] - DEBUG: 实际结果：{'id': 2182, 'name': 'case16758', 'interface': {'name': 'inter67362', 'project': 'fls12543'}, 'author': 'fls530'}
+2020-04-21 12:21:28,061 -- [test_07testcase.py-->line:47] - ERROR: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2182, 'name': 'case16758', 'interface': {'name': 'inter67362', 'project': 'fls12543'}, 'author': 'fls530'}
+Traceback (most recent call last):
+  File "D:\interfacetest\TestCases\test_07testcase.py", line 38, in test_testcase
+    assert_dict(expected, res)
+  File "D:\interfacetest\Common\handle_assert.py", line 14, in assert_dict
+    raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))
+AssertionError: 断言不通过!预期结果:{'interface': {'iid': ['该字段必须int。'], 'pid': ['该字段必须是int。']}},实际结果{'id': 2182, 'name': 'case16758', 'interface': {'name': 'inter67362', 'project': 'fls12543'}, 'author': 'fls530'}
+2020-04-21 12:21:29,266 -- [test_07testcase.py-->line:52] - INFO: 用例--pid不存在--执行通过
+2020-04-21 12:21:30,219 -- [test_07testcase.py-->line:52] - INFO: 用例--iid不存在--执行通过
+2020-04-21 12:21:31,135 -- [test_07testcase.py-->line:52] - INFO: 用例--pid和iid不关联--执行通过
+2020-04-21 12:21:32,144 -- [test_07testcase.py-->line:52] - INFO: 用例--author为空--执行通过
+2020-04-21 12:21:33,101 -- [test_07testcase.py-->line:52] - INFO: 用例--author超过50字符--执行通过
+2020-04-21 12:21:34,374 -- [Run_test.py-->line:22] - INFO: ---------------测试用例执行完毕,正在发送邮件,请注意查收-----------------------

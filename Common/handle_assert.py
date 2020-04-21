@@ -11,4 +11,4 @@ def assert_dict(expected, res):
             # 这个键对应的值是否一致,断言通过
             pass
         else:
-            raise AssertionError("断言不通过")
+            raise AssertionError("断言不通过!" + "预期结果:{},实际结果{}".format(expected, str(res)))

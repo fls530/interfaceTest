@@ -26,7 +26,7 @@ class RegisterTestCase(unittest.TestCase):
         url = conf.get("env", "url") + case["url"]
         if case["interface"] == "register":
             # 注册接口，则随机生成一个用户名和email
-            EnvData.username = self.random_username()
+            EnvData.name = self.random_username()
             EnvData.email = self.random_email()
         data = eval(replace_data(case["data"]))
         expected = eval(replace_data(case["expected"]))
